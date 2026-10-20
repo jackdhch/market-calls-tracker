@@ -73,9 +73,10 @@
    "prev": 7600,
    "set_on": "2026-05-27",
    "acc_2025": "差 4.8%（目标 6,500）",
-   "note": "",
+   "note": "2027 年底 8,700（单一来源，未打开原文）",
    "verified": true,
-   "source": "https://www.cnbc.com/2026/05/27/goldman-raises-its-sp-500-year-end-forecast-its-for-one-simple-reason.html"
+   "source": "https://www.cnbc.com/2026/05/27/goldman-raises-its-sp-500-year-end-forecast-its-for-one-simple-reason.html",
+   "spx_2027": 8700
   },
   {
    "org": "花旗 Citi",
@@ -95,7 +96,7 @@
    "prev": 8400,
    "set_on": "2026-09-16",
    "acc_2025": "",
-   "note": "熊市情形概率调到 30%；8,400 推迟到 2027 年年中",
+   "note": "熊市情形概率调到 30%；10/15 维持 7,900；8,400 推迟到 2027 年年中",
    "verified": true,
    "source": "https://www.advisorperspectives.com/articles/2026/09/16/stocks-bull-yardeni-cuts-s-p-500-7-900-downturn-risks?topic=etf"
   },
@@ -136,35 +137,38 @@
   {
    "org": "富国 Wells Fargo",
    "person": "",
-   "spx_2026": 7800,
-   "prev": null,
-   "set_on": "2025-11-21",
+   "spx_2026": 7700,
+   "prev": 7950,
+   "set_on": "2026-09-16",
    "acc_2025": "第 5，差 2.6%（目标 7,007）",
-   "note": "2025 年 11 月的值，之后未核实",
+   "note": "下调因估值压缩风险；2027 区间来自旗下投资研究院（单一来源）",
    "verified": false,
-   "source": "https://finance.yahoo.com/news/wall-streets-2026-outlook-for-stocks-150650909.html"
+   "source": "https://investinglive.com/stock-market-update/wells-fargo-cut-its-s-p-500-target-even-ahead-of-the-fed-rate-hike-cited-valuation-risk/",
+   "spx_2027": "8,600-8,800（财富投资研究院口径）"
   },
   {
    "org": "巴克莱 Barclays",
    "person": "",
-   "spx_2026": 7400,
-   "prev": null,
-   "set_on": "2025-11-19",
+   "spx_2026": 7950,
+   "prev": 7400,
+   "set_on": "2026-09-09",
    "acc_2025": "第 6，差 3.4%（目标 6,600）",
-   "note": "2025 年 11 月的值，之后未核实",
+   "note": "9/9 由 7,800 上调到 7,950；2027 年底 8,800（单一来源）",
    "verified": false,
-   "source": "https://finance.yahoo.com/news/wall-streets-2026-outlook-for-stocks-150650909.html"
+   "source": "https://www.kitco.com/news/off-the-wire/2026-09-09/barclays-lifts-sp-500-indexs-year-end-target-7950-strong-earnings",
+   "spx_2027": 8800
   },
   {
    "org": "瑞银 UBS",
    "person": "",
    "spx_2026": 8100,
-   "prev": 7500,
-   "set_on": "2026-07",
+   "prev": 7900,
+   "set_on": "2026-08-21",
    "acc_2025": "差 6.3%（目标 6,400）",
-   "note": "7 月由 7,500 上调到 8,100（单一来源，转引自 JPMorgan 报道）",
+   "note": "8/21 全球财富管理上调（单一来源）",
    "verified": false,
-   "source": "https://www.cnbc.com/2026/08/10/jpmorgan-is-the-latest-to-raise-its-sp-500-target-this-time-to-8000-heres-why.html"
+   "source": "https://app.sentisense.ai/stories/ubs-lifts-s-p-500-year-end-target-to-8-100-while-analysts-tweak-stock-forecasts-08212026",
+   "spx_2027": "2027 年中 8,400"
   },
   {
    "org": "CFRA",
@@ -176,6 +180,41 @@
    "note": "8 月初上调到 8,050（单一来源，转引自 JPMorgan 报道）",
    "verified": false,
    "source": "https://www.cnbc.com/2026/08/10/jpmorgan-is-the-latest-to-raise-its-sp-500-target-this-time-to-8000-heres-why.html"
+  },
+  {
+   "org": "Jefferies",
+   "person": "",
+   "spx_2026": null,
+   "prev": null,
+   "set_on": "2026-10",
+   "acc_2025": "",
+   "spx_2027": 9000,
+   "note": "2027 年底 9,000，每股盈利 450 美元（单一来源）",
+   "verified": false,
+   "source": "https://finance.yahoo.com/markets/stocks/articles/jefferies-sets-jaw-dropping-p-144911441.html"
+  },
+  {
+   "org": "Panmure Liberum",
+   "person": "Joachim Klement",
+   "spx_2026": null,
+   "prev": null,
+   "set_on": "2026-10",
+   "acc_2025": "",
+   "spx_2027": 5000,
+   "note": "2027 年底 5,000，最悲观（单一来源）",
+   "verified": false,
+   "source": "https://www.marketscreener.com/news/panmure-liberum-sets-2027-year-end-s-p-500-target-at-5-000-ce785ddbdf80f72c"
+  },
+  {
+   "org": "Tallbacken Capital",
+   "person": "Michael Purves",
+   "spx_2026": 8500,
+   "prev": null,
+   "set_on": "2026-09",
+   "acc_2025": "",
+   "note": "搜索摘要称 9 月上调到 8,500，为华尔街最高（单一来源，未记事件）",
+   "verified": false,
+   "source": "https://www.itiger.com/news/1126581185"
   }
  ],
  "events": [
@@ -216,6 +255,18 @@
    "change": true
   },
   {
+   "date": "2026-08-21",
+   "who": "UBS 全球财富管理",
+   "org": "瑞银 UBS",
+   "kind": "目标",
+   "summary": "年底目标上调到 8,100，2027 年中 8,400；2026 年每股盈利预测 335 调到 350 美元（补录；单一来源，未打开原文）",
+   "spx_target": 8100,
+   "pullback": "",
+   "timing": "",
+   "source": "https://app.sentisense.ai/stories/ubs-lifts-s-p-500-year-end-target-to-8-100-while-analysts-tweak-stock-forecasts-08212026",
+   "change": true
+  },
+  {
    "date": "2026-08-31",
    "who": "Tom Lee",
    "org": "Fundstrat",
@@ -237,6 +288,18 @@
    "pullback": "",
    "timing": "",
    "source": "https://www.kitco.com/news/off-the-wire/2026-09-08/hsbc-lifts-sp-500s-year-end-target-8100-earnings-strength",
+   "change": true
+  },
+  {
+   "date": "2026-09-09",
+   "who": "Barclays 策略团队",
+   "org": "巴克莱 Barclays",
+   "kind": "目标",
+   "summary": "年底目标 7,800 上调到 7,950；2027 年底 8,800；2026 年每股盈利预测 337 调到 365 美元（补录；单一来源，未打开原文）",
+   "spx_target": 7950,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.kitco.com/news/off-the-wire/2026-09-09/barclays-lifts-sp-500-indexs-year-end-target-7950-strong-earnings",
    "change": true
   },
   {
@@ -276,6 +339,18 @@
    "change": true
   },
   {
+   "date": "2026-09-16",
+   "who": "Ohsung Kwon",
+   "org": "富国 Wells Fargo",
+   "kind": "目标",
+   "summary": "年底目标 7,950 下调到 7,700，担心估值压缩，提示可能回调 5%-10%；2027 年每股盈利预测 425 美元（补录；日期按「美联储决议前一天」推算，单一来源，未打开原文）",
+   "spx_target": 7700,
+   "pullback": "5%-10%",
+   "timing": "",
+   "source": "https://investinglive.com/stock-market-update/wells-fargo-cut-its-s-p-500-target-even-ahead-of-the-fed-rate-hike-cited-valuation-risk/",
+   "change": true
+  },
+  {
    "date": "2026-09-17",
    "who": "Tom Lee",
    "org": "Fundstrat",
@@ -300,6 +375,32 @@
    "change": true
   },
   {
+   "date": "2026-10",
+   "who": "Jefferies 策略团队",
+   "org": "Jefferies",
+   "kind": "目标",
+   "summary": "2027 年底目标 9,000，按每股盈利 450 美元、市盈率 20 倍算；靠盈利不靠估值抬升（具体日期未核实，约 9 月底到 10 月初；单一来源，未打开原文）",
+   "spx_target": null,
+   "spx_2027": 9000,
+   "pullback": "",
+   "timing": "",
+   "source": "https://finance.yahoo.com/markets/stocks/articles/jefferies-sets-jaw-dropping-p-144911441.html",
+   "change": true
+  },
+  {
+   "date": "2026-10",
+   "who": "Joachim Klement",
+   "org": "Panmure Liberum",
+   "kind": "目标",
+   "summary": "2027 年底目标 5,000，是华尔街最悲观的一家；担心 AI 泡沫 2027 年起破裂（具体日期未核实；单一来源，未打开原文）",
+   "spx_target": null,
+   "spx_2027": 5000,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.marketscreener.com/news/panmure-liberum-sets-2027-year-end-s-p-500-target-at-5-000-ce785ddbdf80f72c",
+   "change": true
+  },
+  {
    "date": "2026-10-05",
    "who": "Tom Lee",
    "org": "Fundstrat",
@@ -309,6 +410,31 @@
    "pullback": "不再提",
    "timing": "",
    "source": "https://money.whatfinger.com/2026/10/05/theres-excessive-pessimism-in-the-markets-says-fundstrats-tom-lee/",
+   "change": true
+  },
+  {
+   "date": "2026-10-15",
+   "who": "Ed Yardeni",
+   "org": "Yardeni Research",
+   "kind": "观点",
+   "summary": "维持年底 7,900，没有改点位；市场动荡下，「咆哮 2020s」情形概率从 80% 降到 70%，熊市情形升到 30%；标普 10/14 跌 1.1% 到 7,718.94（单一来源，未打开原文）",
+   "spx_target": 7900,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.roic.ai/news/yardeni-cuts-sp-500-target-to-7900-as-market-risks-rise-10-15-2026",
+   "change": false
+  },
+  {
+   "date": "2026-10-20",
+   "who": "Ben Snider",
+   "org": "高盛 Goldman Sachs",
+   "kind": "目标",
+   "summary": "维持 2026 年底 8,000；新给 2027 年底 8,700（日期按报道日期，单一来源，未打开原文）",
+   "spx_target": 8000,
+   "spx_2027": 8700,
+   "pullback": "",
+   "timing": "",
+   "source": "https://finance.yahoo.com/markets/article/goldman-sachs-is-still-betting-on-a-nice-year-end-rally-for-the-sp-500-134755098.html",
    "change": true
   }
  ]
