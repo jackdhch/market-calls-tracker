@@ -57,7 +57,7 @@ summary::-webkit-details-marker{display:none}
 </main>
 <script>
 const BETA = 1.25; // 标普涨跌 1%，纳指 100 约 1.25%（2025-2026 两次回调实测 1.21-1.26 倍）
-const fmt = n => n == null ? "—" : Math.round(n).toLocaleString("en-US");
+const fmt = n => n == null ? "—" : typeof n === "number" ? Math.round(n).toLocaleString("en-US") : n; // 少数目标是区间或文字
 const pct = x => (x >= 0 ? "+" : "") + (x * 100).toFixed(1) + "%";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const get = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
@@ -93,6 +93,8 @@ Promise.all([get("data/calls.json"), get("data/prices.json"), get("data/last_che
       <a href="${esc(t.source)}" target="_blank" rel="noopener">来源</a></div></details>`;
   }
   h += `</div><div class="note">QQQM 换算：标普每涨跌 1%，按纳指 100 涨跌 ${BETA}% 算。「待核实」是 2025 年 11 月或年初的旧值，之后有没有改还没查到。</div>
+  ${(() => { const r = d.targets.filter(t => t.spx_2027).sort((a, b) => (parseFloat(String(b.spx_2027).replace(/,/g, "")) || 0) - (parseFloat(String(a.spx_2027).replace(/,/g, "")) || 0));
+    return r.length ? `<h2>2027 年底标普目标</h2><div class="list">${r.map(t => `<details><summary style="grid-template-columns:1fr auto"><span class="org">${esc(t.org)}<small>${esc(t.person)}</small></span><span class="r num">${esc(fmt(t.spx_2027))}</span></summary><div class="more">${t.note ? esc(t.note) + "<br>" : ""}<a href="${esc(t.source)}" target="_blank" rel="noopener">来源</a></div></details>`).join("")}</div>` : ""; })()}
   <h2>言论时间线</h2>
   <div class="chips">${["全部", "Tom Lee", "目标变化"].map((x, i) => `<button aria-pressed="${!i}">${x}</button>`).join("")}</div>
   <div id="evs"></div>`;

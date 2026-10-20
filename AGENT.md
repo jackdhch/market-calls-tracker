@@ -8,7 +8,7 @@
 
 ## 2. 联网搜索（从上次检查日期前 1 天查到今天）
 用 WebSearch 搜（Tom Lee 和 2027 年目标用 `mode: "extended"`），可以一次并行发好几条。**下面每一项都必须搜，至少 20 次搜索，不许挑几条搜完就收工**：
-1. Tom Lee 至少 5 条，换着搜：`Tom Lee Fundstrat S&P 500 <月份 年份>`、`Tom Lee CNBC stocks this week`、`Tom Lee buy the dip`、`Tom Lee correction pullback`、`Fundstrat Tom Lee year-end target`。他谈比特币、以太坊的不算，只记他对美股大盘的看法。
+1. Tom Lee 至少 5 条，换着搜：`Tom Lee Fundstrat S&P 500 <月份 年份>`、`Tom Lee CNBC stocks this week`、`Tom Lee buy the dip`、`Tom Lee correction pullback`、`Fundstrat Tom Lee year-end target`、`Tom Lee selloff buying opportunity`、`Tom Lee stocks Fundstrat` 加上「最近一周」的日期。他谈比特币、以太坊的不算，只记他对美股大盘的看法；但加密媒体报道里如果转述了他对美股、科技股、大跌的看法，要记。
 2. `data/calls.json` 里 `targets` 的**每一家**机构单独搜一次：`<机构英文名> S&P 500 target <月份 年份>`。
 3. 2027 年目标：`2027 S&P 500 target`、`S&P 500 2027 year-end forecast strategist`、`sets 2027 S&P 500 target`。每年 10-12 月各大行陆续出下一年目标，一家都别漏，表里没有的机构也要记。
 4. 总览：`S&P 500 year-end target raised`、`S&P 500 target cut strategist`、`Nasdaq 100 target strategist`。

@@ -425,6 +425,18 @@
    "change": false
   },
   {
+   "date": "2026-10-17",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "10/16 大跌后对 CNBC 说是买入机会、不是大跌开始；基本面没变，像「压紧的弹簧」，看好芯片、存储、AI 和加密；技术分析师看底部在 10/16 或 10/19。没给新点位",
+   "spx_target": 8200,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.benzinga.com/crypto/cryptocurrency/26/10/62439015/bitmine-buys-12535-ethereum-as-tom-lee-calls-tech-crypto-a-coiled-spring",
+   "change": false
+  },
+  {
    "date": "2026-10-20",
    "who": "Ben Snider",
    "org": "高盛 Goldman Sachs",
