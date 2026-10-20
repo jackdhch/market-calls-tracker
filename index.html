@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>华尔街点位追踪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F5F3;--card:#fff;--line:rgba(0,0,0,.07);--t1:#111;--t2:#6B7280;--t3:#9CA3AF;--accent:#0A84FF;--up:#1a9e47;--down:#d92d20;--warn:#FF9F0A}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121316;--card:#1C1E23;--line:rgba(255,255,255,.08);--t1:#fff;--t2:rgba(255,255,255,.6);--t3:rgba(255,255,255,.4);--accent:#3B9BFF;--up:#3ccf6e;--down:#ff5a4d}}
+:root[data-theme=dark]{--bg:#121316;--card:#1C1E23;--line:rgba(255,255,255,.08);--t1:#fff;--t2:rgba(255,255,255,.6);--t3:rgba(255,255,255,.4);--accent:#3B9BFF;--up:#3ccf6e;--down:#ff5a4d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t1);font:15px/1.7 "Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-synthesis:none;line-break:strict}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:20px;line-height:1.3;margin:0 0 4px}
+h2{font-size:15px;margin:32px 0 10px;color:var(--t2);font-weight:500}
+.sub{color:var(--t3);font-size:12px}
+.num{font-variant-numeric:tabular-nums}
+.hero{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.stat{background:var(--card);border-radius:14px;padding:14px}
+.stat b{display:block;font-size:26px;line-height:1.2;font-weight:700}
+.stat span{font-size:12px;color:var(--t2)}
+.stat.main b{color:var(--accent)}
+.list{background:var(--card);border-radius:14px;overflow:hidden}
+details{border-top:1px solid var(--line)}
+details:first-child{border-top:0}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 64px 62px 52px;gap:8px;align-items:center;padding:10px 14px;min-height:48px}
+summary::-webkit-details-marker{display:none}
+.head{display:grid;grid-template-columns:1fr 64px 62px 52px;gap:8px;padding:8px 14px;font-size:12px;color:var(--t3)}
+.head span:not(:first-child),summary .r{text-align:right}
+.org{font-weight:500}
+.org small{display:block;color:var(--t3);font-size:12px;font-weight:400;line-height:1.3}
+.pill{display:inline-block;font-size:11px;padding:0 6px;border-radius:999px;background:var(--warn);color:#111;margin-left:4px;vertical-align:1px}
+.up{color:var(--up)}.down{color:var(--down)}
+.more{padding:0 14px 12px;font-size:13px;color:var(--t2)}
+.more a{color:var(--accent)}
+.chips{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.chips button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--t1);border-radius:999px;padding:4px 14px;min-height:36px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--t1);color:var(--bg);border-color:var(--t1)}
+.ev{background:var(--card);border-radius:14px;padding:12px 14px;margin-bottom:8px}
+.ev .meta{font-size:12px;color:var(--t3)}
+.ev .who{font-weight:500}
+.ev.chg{box-shadow:inset 3px 0 0 var(--accent)}
+.ev a{color:var(--t3);font-size:12px}
+.note{font-size:12px;color:var(--t3);margin-top:12px}
+.err{background:#FDEEEE;border:1px solid #F5C6C6;color:#8a1c1c;border-radius:12px;padding:12px 14px}
+@media (max-width:520px){.hero{grid-template-columns:1fr 1fr}.hero .stat:first-child{grid-column:1/-1}}
+@media (prefers-reduced-motion:no-preference){details[open] .more{animation:in .2s ease-out}@keyframes in{from{opacity:0;transform:translateY(-4px)}}}
+</style>
+</head>
+<body>
+<main>
+  <h1>华尔街点位追踪</h1>
+  <div class="sub" id="checked">读取中…</div>
+  <div id="app"></div>
+</main>
+<script>
+const BETA = 1.25; // 标普涨跌 1%，纳指 100 约 1.25%（2025-2026 两次回调实测 1.21-1.26 倍）
+const fmt = n => n == null ? "—" : Math.round(n).toLocaleString("en-US");
+const pct = x => (x >= 0 ? "+" : "") + (x * 100).toFixed(1) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const get = f => fetch(f + "?t=" + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+
+Promise.all([get("data/calls.json"), get("data/prices.json"), get("data/last_check.json")]).then(([d, p, c]) => {
+  const app = document.getElementById("app");
+  if (!d) { app.innerHTML = '<div class="err">数据文件读不到。<br><span class="sub">刷新一下；还不行就是仓库里的 data/calls.json 出了问题。</span></div>'; return; }
+  document.getElementById("checked").textContent = c
+    ? `上次检查 ${c.checked_at.slice(0, 16).replace("T", " ")}（UTC）· ${c.note || ""}`
+    : "还没跑过每日检查";
+  const spx = p?.["^GSPC"]?.close, qqqm = p?.QQQM?.close;
+  const rows = d.targets.filter(t => t.spx_2026).sort((a, b) => b.spx_2026 - a.spx_2026);
+  const vals = rows.map(t => t.spx_2026).sort((a, b) => a - b);
+  const med = vals.length % 2 ? vals[(vals.length - 1) / 2] : (vals[vals.length / 2 - 1] + vals[vals.length / 2]) / 2;
+  const toQ = t => spx && qqqm ? qqqm * (1 + BETA * (t / spx - 1)) : null;
+  const dist = t => spx ? `<span class="${t >= spx ? "up" : "down"}">${t >= spx ? "↑" : "↓"}${pct(t / spx - 1).replace(/^[+-]/, "")}</span>` : "—";
+
+  let h = `<div class="hero">
+    <div class="stat main"><b class="num">${fmt(med)}</b><span>各家 2026 年底目标中位数${spx ? "，比现价 " + pct(med / spx - 1) : ""}</span></div>
+    <div class="stat"><b class="num">${fmt(spx)}</b><span>标普 500 收盘 ${p?.["^GSPC"]?.date || ""}</span></div>
+    <div class="stat"><b class="num">${qqqm ? "$" + qqqm.toFixed(2) : "—"}</b><span>QQQM 收盘；按中位数换算 ${toQ(med) ? "$" + toQ(med).toFixed(0) : "—"}</span></div>
+  </div>
+  <h2>各家 2026 年底标普目标（点开看详情）</h2>
+  <div class="list"><div class="head"><span>机构</span><span>目标</span><span>距现价</span><span>QQQM</span></div>`;
+  for (const t of rows) {
+    const q = toQ(t.spx_2026);
+    h += `<details><summary>
+      <span class="org">${esc(t.org)}${t.verified ? "" : '<span class="pill">待核实</span>'}<small>${esc(t.person)}</small></span>
+      <span class="r num">${fmt(t.spx_2026)}</span><span class="r num">${dist(t.spx_2026)}</span><span class="r num">${q ? "$" + q.toFixed(0) : "—"}</span>
+    </summary><div class="more">
+      ${t.prev ? `从 ${fmt(t.prev)} 调到 ${fmt(t.spx_2026)}，` : ""}定于 ${esc(t.set_on)}${t.spx_2027 ? `；2027 年目标 ${fmt(t.spx_2027)}` : ""}<br>
+      ${t.acc_2025 ? "2025 年准确度：" + esc(t.acc_2025) + "<br>" : ""}${t.note ? esc(t.note) + "<br>" : ""}
+      <a href="${esc(t.source)}" target="_blank" rel="noopener">来源</a></div></details>`;
+  }
+  h += `</div><div class="note">QQQM 换算：标普每涨跌 1%，按纳指 100 涨跌 ${BETA}% 算。「待核实」是 2025 年 11 月或年初的旧值，之后有没有改还没查到。</div>
+  <h2>言论时间线</h2>
+  <div class="chips">${["全部", "Tom Lee", "目标变化"].map((x, i) => `<button aria-pressed="${!i}">${x}</button>`).join("")}</div>
+  <div id="evs"></div>`;
+  app.innerHTML = h;
+
+  const evs = [...d.events].sort((a, b) => b.date.localeCompare(a.date));
+  const show = f => {
+    const list = evs.filter(e => f === "全部" || (f === "Tom Lee" ? e.who === "Tom Lee" : e.change && e.kind === "目标"));
+    document.getElementById("evs").innerHTML = list.length ? list.map(e => `<div class="ev${e.change ? " chg" : ""}">
+      <div class="meta num">${esc(e.date)} · ${esc(e.kind)}${e.pullback ? " · 回调 " + esc(e.pullback) : ""}${e.timing ? " · " + esc(e.timing) : ""}</div>
+      <div><span class="who">${esc(e.org.includes(e.who) ? e.org : e.who + "（" + e.org + "）")}</span>：${esc(e.summary)}</div>
+      <a href="${esc(e.source)}" target="_blank" rel="noopener">来源</a></div>`).join("") : '<div class="sub">这个分类下还没有记录。</div>';
+  };
+  document.querySelector(".chips").onclick = e => {
+    if (e.target.tagName !== "BUTTON") return;
+    document.querySelectorAll(".chips button").forEach(b => b.setAttribute("aria-pressed", b === e.target));
+    show(e.target.textContent);
+  };
+  show("全部");
+});
+</script>
+</body>
+</html>
