@@ -1,15 +1,16 @@
 {
- "checked_at": "Tue Oct 20 11:33:58 UTC 2026",
- "searched_since": "2026-10-19",
+ "checked_at": "Wed Oct 21 11:41:01 UTC 2026",
+ "searched_since": "2026-10-20",
  "new_events": 1,
- "note": "Tom Lee 10/20 称年底标普约 8,400（原 8,200，上调）；其余各大行无新点位（WebFetch 域名仍解析失败，未能打开原文，单一来源）",
+ "note": "Tom Lee 10/21 称 AI 股下跌是回调、是买入机会（无新点位，仍约 8,400）；各大行无新点位，2027 目标无新机构（WebFetch 仍打不开，单一来源）",
  "queries": [
-  "Tom Lee Fundstrat S&P 500 October 2026",
+  "Tom Lee Fundstrat S&P 500 October 21 2026",
   "Tom Lee CNBC stocks this week",
   "Tom Lee buy the dip",
   "Tom Lee correction pullback",
   "Fundstrat Tom Lee year-end target",
   "Tom Lee selloff buying opportunity",
+  "Tom Lee stocks Fundstrat Oct 20 2026",
   "2027 S&P 500 target",
   "S&P 500 2027 year-end forecast strategist",
   "sets 2027 S&P 500 target",
@@ -30,7 +31,7 @@
   "Wells Fargo S&P 500 target October 2026",
   "Barclays S&P 500 target October 2026",
   "UBS S&P 500 target October 2026",
-  "CFRA Tallbacken Jefferies S&P 500 target October 2026"
+  "CFRA Tallbacken Jefferies Panmure S&P 500 target October 2026"
  ],
  "opened": []
 }

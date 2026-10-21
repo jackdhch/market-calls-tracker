@@ -460,6 +460,18 @@
    "timing": "期中选举后",
    "source": "https://www.benzinga.com/markets/market-summary/26/10/62460996/tom-lee-predicts-sp-500-at-8400-by-year-end-says-midterm-elections-could-trigger-risk-on-rally-in-tech-stocks-and-crypto-we-are-in-an-unprecedented-time",
    "change": true
+  },
+  {
+   "date": "2026-10-21",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "称 AI 股近期下跌更像回调而非见顶，是买入机会；拿思科 1990 年代走势类比，说眼下相当于当年同一阶段，自己在逢低买 AI 股；把下跌归因于韩国股市疲软和 AI 投资的债务担忧。没给新点位，方向不变（日期按报道日期，单一来源，仅见搜索摘要，未打开原文）",
+   "spx_target": 8400,
+   "pullback": "",
+   "timing": "",
+   "source": "https://seekingalpha.com/news/4655027-tom-lee-sees-ai-dip-as-buying-opportunity-cites-ciscos-1990s-rally",
+   "change": false
   }
  ]
 }
