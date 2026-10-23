@@ -472,6 +472,19 @@
    "timing": "",
    "source": "https://seekingalpha.com/news/4655027-tom-lee-sees-ai-dip-as-buying-opportunity-cites-ciscos-1990s-rally",
    "change": false
+  },
+  {
+   "date": "2026-10-22",
+   "who": "瑞银一位投资组合经理（非瑞银官方目标）",
+   "org": "瑞银 UBS",
+   "kind": "观点",
+   "summary": "称标普 500 到 2027 年 6 月可能到 9,500，靠 AI、长寿经济和能源热潮，前提是美联储再加息两次而市场没定价；高于瑞银官方 2027 年中 8,400（日期按报道日期，单一来源，未打开原文）",
+   "spx_target": null,
+   "spx_2027": 9500,
+   "pullback": "",
+   "timing": "2027 年 6 月",
+   "source": "https://247wallst.com/investing/2026/10/22/ubs-portfolio-manager-sp-500-could-hit-9500-by-june-2027-on-ai-longevity-energy-boom/",
+   "change": false
   }
  ]
 }
