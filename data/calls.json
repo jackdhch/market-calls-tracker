@@ -178,9 +178,10 @@
    "prev": null,
    "set_on": "2026-08",
    "acc_2025": "",
-   "note": "8 月初上调到 8,050（单一来源，转引自 JPMorgan 报道）",
+   "note": "8 月初上调到 8,050（单一来源，转引自 JPMorgan 报道）；8/10 报道称 12 个月目标 8,650（单一来源，未打开原文）",
    "verified": false,
-   "source": "https://www.cnbc.com/2026/08/10/jpmorgan-is-the-latest-to-raise-its-sp-500-target-this-time-to-8000-heres-why.html"
+   "source": "https://www.cnbc.com/2026/08/10/jpmorgan-is-the-latest-to-raise-its-sp-500-target-this-time-to-8000-heres-why.html",
+   "spx_12m": 8650
   },
   {
    "org": "Jefferies",
@@ -485,6 +486,18 @@
    "pullback": "",
    "timing": "2027 年 6 月",
    "source": "https://247wallst.com/investing/2026/10/22/ubs-portfolio-manager-sp-500-could-hit-9500-by-june-2027-on-ai-longevity-energy-boom/",
+   "change": false
+  },
+  {
+   "date": "2026-10-23",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "对 CNBC 说科技股和芯片股抛售已到「后期」，因为做空科技股已成共识；国债收益率回落到 5% 以下，美联储可能转鸽；技术分析师 Mark Newton 称科技股基本到了支撑位。没给新点位，方向不变（日期按报道日期推算，约 10/23-10/24，单一来源，仅见搜索摘要，未打开原文）",
+   "spx_target": 8400,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.kucoin.com/news/flash/tom-lee-market-in-sell-off-tech-stocks-near-support-level",
    "change": false
   }
  ]

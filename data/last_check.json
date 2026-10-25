@@ -1,10 +1,10 @@
 {
- "checked_at": "Sat Oct 24 11:40:32 UTC 2026",
+ "checked_at": "Sun Oct 25 11:40:54 UTC 2026",
  "searched_since": "2026-10-22",
- "new_events": 0,
- "note": "没有新增：各大行无新点位；Tom Lee 搜到的 10/23 CNBC 言论日期对不上（可能是更早的访谈），观点方向没变，未记；摩根士丹利 2027 年中 8,300 只补进目标表备注；WebFetch 无法联网，全部未核对原文",
+ "new_events": 1,
+ "note": "新增 Tom Lee 约 10/23 对 CNBC 说科技抛售接近尾声（点位不变）；各大行无新点位；CFRA 12 个月目标 8,650 补进备注；WebFetch 无法联网，全部未核对原文",
  "queries": [
-  "Tom Lee Fundstrat S&P 500 October 24 2026",
+  "Tom Lee Fundstrat S&P 500 October 25 2026",
   "Tom Lee CNBC stocks this week",
   "Tom Lee buy the dip",
   "Tom Lee correction pullback",
@@ -21,15 +21,14 @@
   "Oppenheimer Stoltzfus S&P 500 target October 2026",
   "HSBC S&P 500 target October 2026",
   "Bank of America Subramanian S&P 500 target October 2026",
-  "Morgan Stanley Wilson S&P 500 target October 2026 2027",
+  "Morgan Stanley Wilson 2027 S&P 500 target October 2026",
   "Goldman Sachs Snider S&P 500 target October 2026",
   "Citi Chronert S&P 500 target October 2026",
   "Yardeni S&P 500 target October 2026",
   "RBC Calvasina S&P 500 target October 2026",
   "JPMorgan S&P 500 target October 2026",
   "Wells Fargo S&P 500 target October 2026",
-  "Barclays S&P 500 target October 2026",
-  "UBS S&P 500 target October 2026",
+  "Barclays UBS S&P 500 target October 2026",
   "CFRA Tallbacken Jefferies Panmure S&P 500 target October 2026"
  ],
  "opened": []
