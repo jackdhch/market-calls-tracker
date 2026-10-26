@@ -62,7 +62,7 @@
    "prev": 7800,
    "set_on": "2026-07",
    "acc_2025": "差 4.8%（和多数大行一样，目标 6,500）",
-   "note": "9/21：能源和债市恶化的话可能先跌到 7,100，再年底反弹",
+   "note": "9/21：能源和债市恶化的话可能先跌到 7,100，再年底反弹；10/20 对 CNBC 称回调接近尾声、明年年中 8,500 有可能（说话人有争议，单一来源）",
    "verified": true,
    "source": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-wilson-says-us-082353803.html",
    "spx_2027": "2027 年中 8,300（搜索摘要，日期未核实，单一来源）"
@@ -461,6 +461,19 @@
    "pullback": "",
    "timing": "期中选举后",
    "source": "https://www.benzinga.com/markets/market-summary/26/10/62460996/tom-lee-predicts-sp-500-at-8400-by-year-end-says-midterm-elections-could-trigger-risk-on-rally-in-tech-stocks-and-crypto-we-are-in-an-unprecedented-time",
+   "change": true
+  },
+  {
+   "date": "2026-10-20",
+   "who": "Mike Wilson",
+   "org": "摩根士丹利 Morgan Stanley",
+   "kind": "观点",
+   "summary": "对 CNBC 说回调已在「最后阶段」，还要再乱两三周，之后年底走强；说「明年年中 8,500 有可能达到」，高于大摩官方 2027 年中 8,300；2026 年底 8,000 不变，仍提示 12 月可能再加息。注意：Stocktwits 把同一访谈归到大摩首席投资官 Amato 名下，说话人未核实（日期按报道推算为周二 10/20，单一来源，仅见搜索摘要，未打开原文）",
+   "spx_target": 8000,
+   "spx_2027": 8500,
+   "pullback": "快结束，再乱 2-3 周",
+   "timing": "2-3 周后",
+   "source": "https://www.benzinga.com/markets/prediction-markets/26/10/62475470/mike-wilson-market-correction-sp500-8500",
    "change": true
   },
   {
