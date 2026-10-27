@@ -99,7 +99,8 @@
    "acc_2025": "",
    "note": "熊市情形概率调到 30%；10/15 维持 7,900；8,400 推迟到 2027 年年中",
    "verified": true,
-   "source": "https://www.advisorperspectives.com/articles/2026/09/16/stocks-bull-yardeni-cuts-s-p-500-7-900-downturn-risks?topic=etf"
+   "source": "https://www.advisorperspectives.com/articles/2026/09/16/stocks-bull-yardeni-cuts-s-p-500-7-900-downturn-risks?topic=etf",
+   "spx_2027": "2027 年中 8,400（10/26 报道，单一来源）"
   },
   {
    "org": "Fundstrat",
@@ -511,6 +512,19 @@
    "pullback": "",
    "timing": "",
    "source": "https://www.kucoin.com/news/flash/tom-lee-market-in-sell-off-tech-stocks-near-support-level",
+   "change": false
+  },
+  {
+   "date": "2026-10-26",
+   "who": "Ed Yardeni",
+   "org": "Yardeni Research",
+   "kind": "观点",
+   "summary": "称标普 500 到 2027 年年中可到 8,400，依据是 2027 年每股盈利 425 美元；把回调视为买入机会；2026 年底 7,900 不变，另重申 2029 年底 10,000 的长期目标。点位与 9/16 起的口径一致，无变化（日期按报道日期，单一来源，仅见搜索摘要，WebFetch 打不开原文）",
+   "spx_target": 7900,
+   "spx_2027": 8400,
+   "pullback": "",
+   "timing": "2027 年年中",
+   "source": "https://gokhshtein.com/news/2026-10-26-yardeni-targets-sp-500-at-8400-views-pullbacks-as-buys",
    "change": false
   }
  ]

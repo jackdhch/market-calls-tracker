@@ -1,10 +1,10 @@
 {
- "checked_at": "Mon Oct 26 11:40:35 UTC 2026",
- "searched_since": "2026-10-24",
+ "checked_at": "Tue Oct 27 11:41:41 UTC 2026",
+ "searched_since": "2026-10-25",
  "new_events": 1,
- "note": "新增大摩 Wilson 约 10/20 对 CNBC 说回调近尾声、明年年中 8,500；Tom Lee 10/23 的言论已记过、无新点位；其余各大行无新目标；WebFetch 无法联网，全部未核对原文",
+ "note": "新增 Yardeni 10/26 称 2027 年年中 8,400（点位无变化）；Tom Lee 只见已记过的 8,200-8,400、逢低买入言论，无新点位；各大行无新目标；WebFetch 无法联网，全部未核对原文",
  "queries": [
-  "Tom Lee Fundstrat S&P 500 October 26 2026",
+  "Tom Lee Fundstrat S&P 500 October 27 2026",
   "Tom Lee CNBC stocks this week",
   "Tom Lee buy the dip",
   "Tom Lee correction pullback",
@@ -21,7 +21,7 @@
   "Oppenheimer Stoltzfus S&P 500 target October 2026",
   "HSBC S&P 500 target October 2026",
   "Bank of America Subramanian S&P 500 target October 2026",
-  "Morgan Stanley Wilson S&P 500 2027 target October 2026",
+  "Morgan Stanley Wilson 2027 S&P 500 target October 2026",
   "Goldman Sachs Snider S&P 500 target October 2026",
   "Citi Chronert S&P 500 target October 2026",
   "Yardeni S&P 500 target October 2026",
@@ -31,9 +31,7 @@
   "Barclays Emmanuel Cau S&P 500 target October 2026",
   "UBS S&P 500 target October 2026",
   "CFRA Stovall S&P 500 target October 2026",
-  "Jefferies Panmure Tallbacken S&P 500 target October 2026",
-  "Mike Wilson Morgan Stanley correction nearly over 8,500 middle of next year CNBC",
-  "Tom Lee healthy correction $30 trillion infrastructure tech dip Benzinga"
+  "Jefferies Panmure Tallbacken S&P 500 target October 2026"
  ],
  "opened": []
 }
