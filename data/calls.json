@@ -526,6 +526,18 @@
    "timing": "2027 年年中",
    "source": "https://gokhshtein.com/news/2026-10-26-yardeni-targets-sp-500-at-8400-views-pullbacks-as-buys",
    "change": false
+  },
+  {
+   "date": "2026-10-28",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "列出看好 AI 交易的六点理由并说「我在买这次 AI 的下跌」：AI 技术突破、硬件供给紧张、对冲基金大量做空像投降式抛售；拿思科 1997 年的回调做类比。没给新点位，方向不变（日期未核实，按搜索发现日记录，约 10/27-28；单一来源，仅见搜索摘要，WebFetch 打不开原文）",
+   "spx_target": 8400,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.benzinga.com/markets/equities/26/10/62617346/tom-lees-top-6-reasons-for-conviction-about-the-ai-trade-im-buying-this-ai-dip",
+   "change": false
   }
  ]
 }
