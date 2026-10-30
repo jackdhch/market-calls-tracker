@@ -143,10 +143,10 @@
    "prev": 7950,
    "set_on": "2026-09-16",
    "acc_2025": "第 5，差 2.6%（目标 7,007）",
-   "note": "下调因估值压缩风险；2027 区间来自旗下投资研究院（单一来源）",
+   "note": "下调因估值压缩风险；2027 年底 8,600-8,800（9/29 报道，单一来源，未打开原文）",
    "verified": false,
    "source": "https://investinglive.com/stock-market-update/wells-fargo-cut-its-s-p-500-target-even-ahead-of-the-fed-rate-hike-cited-valuation-risk/",
-   "spx_2027": "8,600-8,800（财富投资研究院口径）"
+   "spx_2027": "8,600-8,800（9/29 起；单一来源）"
   },
   {
    "org": "巴克莱 Barclays",
@@ -375,6 +375,19 @@
    "pullback": "到 7,100",
    "timing": "近期",
    "source": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-wilson-says-us-082353803.html",
+   "change": true
+  },
+  {
+   "date": "2026-09-29",
+   "who": "Ohsung Kwon 等富国策略团队",
+   "org": "富国 Wells Fargo",
+   "kind": "目标",
+   "summary": "首次给出 2027 年底标普 500 目标区间 8,600-8,800，理由是经济增长有韧性、AI 投入持续（补录：本次检查才发现；日期来自搜索摘要，单一来源，未打开原文）",
+   "spx_target": null,
+   "spx_2027": "8,600-8,800",
+   "pullback": "",
+   "timing": "2027 年底",
+   "source": "https://in.investing.com/news/stock-market-news/wells-fargo-sets-2027-sp-500-target-at-86008800-on-ai-growth-93CH-5611268",
    "change": true
   },
   {
