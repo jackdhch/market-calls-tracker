@@ -1,8 +1,8 @@
 {
- "checked_at": "Sun Nov  1 11:40:58 UTC 2026",
+ "checked_at": "Mon Nov  2 11:40:26 UTC 2026",
  "searched_since": "2026-10-30",
- "new_events": 0,
- "note": "Tom Lee 没有新言论（只见到 10/20、10/21、10/23、10/28 已记录过的旧报道）；各大行和 2027 年目标都没有新变化。搜到 Partners Group 2027 年底 8,500 / 8,200，但日期不明、单一来源，未记录；WebFetch 打不开原文（域名被拦截），未做原文核对",
+ "new_events": 1,
+ "note": "Tom Lee 约 10/30 对 CNBC 说纳指下跌像被迫卖出、期中选举（11/3）前缺少逢低买入信心，点位和方向不变；各大行没有新目标或新的 2027 年目标。WebFetch 打不开 finance.yahoo.com（域名被拦截），未做原文核对",
  "queries": [
   "Tom Lee Fundstrat S&P 500 November 2026",
   "Tom Lee CNBC stocks this week",
@@ -11,7 +11,6 @@
   "Fundstrat Tom Lee year-end target",
   "Tom Lee 2027 S&P 500 target",
   "Tom Lee selloff buying opportunity Fundstrat",
-  "Tom Lee stocks Fundstrat October 30 2026",
   "2027 S&P 500 target",
   "S&P 500 2027 year-end forecast strategist",
   "sets 2027 S&P 500 target",

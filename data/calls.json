@@ -551,6 +551,18 @@
    "timing": "",
    "source": "https://www.benzinga.com/markets/equities/26/10/62617346/tom-lees-top-6-reasons-for-conviction-about-the-ai-trade-im-buying-this-ai-dip",
    "change": false
+  },
+  {
+   "date": "2026-10-30",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "对 CNBC 说周五纳指下跌像是被迫卖出，不是投资者放弃股票；在 11 月 3 日期中选举之后之前，逢低买入的信心不足，股价「不用太多就会跌很多」；仍认为科技股抛售处于后期（日期按搜索摘要推断约 10/30，单一来源，WebFetch 打不开原文）。没给新点位，方向不变",
+   "spx_target": 8400,
+   "pullback": "",
+   "timing": "选举（11/3）后",
+   "source": "https://finance.yahoo.com/markets/stocks/articles/tom-lee-says-investors-hesitant-120104776.html",
+   "change": false
   }
  ]
 }
