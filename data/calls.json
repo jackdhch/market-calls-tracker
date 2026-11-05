@@ -575,6 +575,18 @@
    "timing": "选举（11/3）后",
    "source": "https://www.benzinga.com/markets/market-summary/26/11/62807521/tom-lee-says-we-are-at-the-bottom-as-tech-sell-off-rocks-markets-but-he-still-sees-sp-500-above-8200-by-year-end",
    "change": false
+  },
+  {
+   "date": "2026-11-04",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "期中选举后对 CNBC 说，跌得最惨的存储、芯片、数据中心和新云股会有「最大的反弹」，科技股可能反弹 15%-20%，称前几天的抛售是「下意识反应」；提前做空科技股的人回补也会推高反弹。Fundstrat 11/3-11/4 的客户报告同样预计选后股市上涨、科技和 AI 领涨（以 QQQ 为代表）。没给新的标普点位，看涨方向不变，年底口径仍是 8,200 以上（日期按报道日期 11/4；单一来源，仅见搜索摘要，WebFetch 打不开 yahoo、fundstratdirect、kucoin 原文）",
+   "spx_target": 8200,
+   "pullback": "",
+   "timing": "选举（11/3）后",
+   "source": "https://finance.yahoo.com/technology/ai/articles/tom-lee-says-memory-semis-121959699.html",
+   "change": false
   }
  ]
 }
