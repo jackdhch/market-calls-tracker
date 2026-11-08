@@ -541,6 +541,18 @@
    "change": false
   },
   {
+   "date": "2026-10-27",
+   "who": "Binky Chadha",
+   "org": "德意志银行 Deutsche Bank",
+   "kind": "观点",
+   "summary": "德银股票团队维持 2026 年底标普 500 目标 8,000 不变，称年内可能还有最后一次回调；8,500 左右只是上行情景，不是官方目标（日期按 roic.ai 报道日期 10/27；单一来源，仅见搜索摘要，未打开原文）",
+   "spx_target": 8000,
+   "pullback": "年内最后一次回调（幅度未见）",
+   "timing": "年底前",
+   "source": "https://www.roic.ai/news/deutsche-bank-sees-potential-final-stock-market-dip-of-2026-10-27-2026",
+   "change": false
+  },
+  {
    "date": "2026-10-28",
    "who": "Tom Lee",
    "org": "Fundstrat",
@@ -586,6 +598,18 @@
    "pullback": "",
    "timing": "选举（11/3）后",
    "source": "https://finance.yahoo.com/technology/ai/articles/tom-lee-says-memory-semis-121959699.html",
+   "change": false
+  },
+  {
+   "date": "2026-11-08",
+   "who": "Tom Lee",
+   "org": "Fundstrat",
+   "kind": "观点",
+   "summary": "对 CNBC 说选举后 AI 股的下跌「过度反应」，美国 AI 基础设施放缓只是「减速带」，并认为美联储 12 月不一定加息；此前仍是看涨科技、年底 8,200 以上，没给新点位，方向不变（日期按 KuCoin 转述的报道日期，实际说话日可能是 11/5-11/6；单一来源，仅见搜索摘要，未打开原文）",
+   "spx_target": 8200,
+   "pullback": "",
+   "timing": "",
+   "source": "https://www.kucoin.com/news/flash/tom-lee-ai-stocks-overcorrected-fed-may-not-hike-rates-in-december",
    "change": false
   }
  ]

@@ -1,8 +1,8 @@
 {
- "checked_at": "Sat Nov  7 12:33:33 UTC 2026",
- "searched_since": "2026-11-05",
- "new_events": 0,
- "note": "Tom Lee 11/5-11/6 的「选后科技股反弹 15%-20%」「年底 8,200 以上」「抛售是过度反应」都和已记的 11/4 那条重复，没有新点位；各大行没有新的 2026 或 2027 年目标（高盛 8,700、杰弗里斯 9,000、摩根大通私人银行 9,000 情景等均为已记或非官方基准）。WebFetch 打不开 roic.ai、fundstratdirect、benzinga（域名未放行），未能核对原文",
+ "checked_at": "Sun Nov  8 12:40:44 UTC 2026",
+ "searched_since": "2026-11-06",
+ "new_events": 2,
+ "note": "新增 2 条无新点位的言论：德银 10/27 维持 8,000（补记）、Tom Lee 称 AI 股下跌过度反应、12 月未必加息；各大行无新的 2026 或 2027 年目标。WebFetch 打不开 kucoin、cnbc、roic.ai（域名未放行），均为单一来源搜索摘要",
  "queries": [
   "Tom Lee Fundstrat S&P 500 November 2026",
   "Tom Lee CNBC stocks this week",
@@ -10,7 +10,7 @@
   "Tom Lee correction pullback",
   "Fundstrat Tom Lee year-end target",
   "Tom Lee selloff buying opportunity Fundstrat",
-  "Tom Lee Fundstrat stocks November 7 2026",
+  "Tom Lee Fundstrat stocks November 8 2026",
   "2027 S&P 500 target",
   "S&P 500 2027 year-end forecast strategist",
   "sets 2027 S&P 500 target",
