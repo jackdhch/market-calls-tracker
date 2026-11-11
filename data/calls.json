@@ -165,12 +165,13 @@
       "person": "",
       "spx_2026": 8100,
       "prev": 7900,
-      "set_on": "2026-08-21",
+      "set_on": "2026-11-10",
       "acc_2025": "差 6.3%（目标 6,400）",
       "note": "8/21 全球财富管理上调（单一来源）",
       "verified": false,
-      "source": "https://app.sentisense.ai/stories/ubs-lifts-s-p-500-year-end-target-to-8-100-while-analysts-tweak-stock-forecasts-08212026",
-      "spx_2027": "2027 年中 8,400"
+      "source": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267",
+      "spx_2027": "2027 年底 8,900；2028 年底 9,600（11/10 报道，单一来源）",
+      "prev_2027": "2027 年中 8,400"
     },
     {
       "org": "CFRA",
@@ -623,6 +624,18 @@
       "timing": "",
       "source": "https://www.tokenpost.com/news/investing/52894",
       "change": false
+    },
+    {
+      "date": "2026-11-10",
+      "who": "Keith Parker",
+      "org": "瑞银 UBS",
+      "kind": "目标",
+      "summary": "瑞银重申标普 500 2027 年底目标 8,900（约 18 倍 2028 年每股盈利 490 美元），首次给出 2028 年底目标 9,600；理由是 2026 年远期市盈率约降 20%、盈利涨约 33%；提醒选举后各州可能暂停数据中心建设。另有一家报道称其 2026 年底目标降到 7,900，未核实。表里原有的 2027 年中 8,400 被这条年底 8,900 取代。单一来源（搜索摘要），WebFetch 域名未放行，未打开原文",
+      "spx_target": 8900,
+      "pullback": null,
+      "timing": "2027 年底",
+      "source": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267",
+      "change": true
     }
   ]
 }
