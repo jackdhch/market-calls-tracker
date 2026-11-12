@@ -590,6 +590,18 @@
       "change": false
     },
     {
+      "date": "2026-11-02",
+      "who": "Mike Wilson",
+      "org": "摩根士丹利 Morgan Stanley",
+      "kind": "观点",
+      "summary": "大摩 11/2 报告维持 2026 年底标普 500 目标 8,000，同时给出短线下行区间 7,100-7,300，之后再更积极加仓；11/9 另有报道称他认为本轮回调已进入「最后阶段」，把芯片抛售当作入场点。没有新目标（单一来源，仅见搜索摘要，WebFetch 域名未放行，未打开原文；11/2 报告日期按二手转述）",
+      "spx_target": 8000,
+      "pullback": "短线下探 7,100-7,300",
+      "timing": "年底前",
+      "source": "https://stocktwits.com/news-articles/markets/equity/morgan-stanley-sp500-correction-in-final-innings-chip-selloff-an-entry-point/cNGrWkfR9e6",
+      "change": false
+    },
+    {
       "date": "2026-11-04",
       "who": "Tom Lee",
       "org": "Fundstrat",

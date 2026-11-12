@@ -1,23 +1,23 @@
 {
-  "checked_at": "Wed Nov 11 12:41:34 UTC 2026",
-  "searched_since": "2026-11-09",
+  "checked_at": "Thu Nov 12 12:40:32 UTC 2026",
+  "searched_since": "2026-11-10",
   "new_events": 1,
-  "note": "新增 1 条：瑞银 11/10 重申 2027 年底标普 500 目标 8,900 并首次给 2028 年底 9,600；Tom Lee 无新言论（11/9 之后只有重复报道，年底 8,200 以上不变）；其余机构无新目标。WebFetch 域名未放行，全部为搜索摘要单一来源",
+  "note": "新增 1 条：大摩 11/2 报告维持年底 8,000、短线下行区间 7,100-7,300；Tom Lee 无新言论（只有 11/9 之前的重复报道，年底 8,200 以上不变）；各家机构无新目标。WebFetch 域名未放行，全部为搜索摘要单一来源",
   "queries": [
-    "Tom Lee Fundstrat S&P 500 November 2026",
+    "Tom Lee Fundstrat S&P 500 November 12 2026",
     "Tom Lee CNBC stocks this week",
     "Tom Lee buy the dip",
     "Tom Lee correction pullback",
     "Fundstrat Tom Lee year-end target",
-    "Tom Lee Fundstrat stocks November 11 2026",
-    "Tom Lee November 10 2026 CNBC VIX inflation stocks",
+    "Tom Lee 2027 one of stock market's best years SpaceX Fed",
+    "Tom Lee selloff buying opportunity November 2026",
+    "Tom Lee stocks Fundstrat inflation CPI November 12",
     "2027 S&P 500 target",
     "S&P 500 2027 year-end forecast strategist",
     "sets 2027 S&P 500 target",
     "S&P 500 year-end target raised",
     "S&P 500 target cut strategist",
     "Nasdaq 100 target strategist",
-    "UBS end-2027 S&P 500 8,900 end-2028 9,600 Keith Parker",
     "Societe Generale S&P 500 target November 2026",
     "Deutsche Bank S&P 500 target November 2026",
     "Oppenheimer Stoltzfus S&P 500 target November 2026",
@@ -31,9 +31,9 @@
     "JPMorgan Lakos-Bujas S&P 500 target November 2026",
     "Wells Fargo S&P 500 target November 2026",
     "Barclays S&P 500 target November 2026",
-    "UBS S&P 500 target November 2026",
     "CFRA Stovall S&P 500 target November 2026",
-    "Jefferies Tallbacken Panmure S&P 500 target November 2026"
+    "Jefferies Tallbacken Panmure S&P 500 target November 2026",
+    "UBS S&P 500 target 7,900 2026 lowered"
   ],
   "opened": []
 }
